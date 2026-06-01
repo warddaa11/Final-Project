@@ -103,9 +103,9 @@ ul li:hover > ul{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     list-style: none;
-    font-size: 17px;
+    font-size: 15px;
     padding-bottom: 2rem;
 }
 .ContainerFaqs a{
@@ -297,4 +297,6 @@ ul li:hover > ul{
 }
 
 }
+@media (min-width:1024px){
 
+}
