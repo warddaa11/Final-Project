@@ -473,3 +473,15 @@ body{
 
 
 }
+@media (min-width:1024px){
+    .ContainerParagraph h5{
+        font-size: 14px;
+    }
+
+    .ContainerParagraph span{
+        font-size: 14px;
+    }
+    .ParagraphCard p{
+        font-size: 12px;
+    }
+}
