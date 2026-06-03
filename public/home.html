@@ -6,7 +6,7 @@
     <title>Optilux - Eye Clinic Optometrist and Optical Store HTML Template</title>
     <link rel="stylesheet" href="./css/home.css">
     <script src="https://kit.fontawesome.com/c11cd62dbf.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
+    <!-- <link rel="icon" type="image/x-icon" href="./images/favicon.webp"> -->
 </head>
 <body>
     <!-- !------The Header------ -->
@@ -26,7 +26,10 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#"><button class="BotonHeader">Book Your Visit</button></a>
+            <a href="#" class="btn">
+              <span class="text text1">Book Your Visit</span>
+              <span class="text text2">Book Your Visit</span>
+            </a>
         </div>
 
        
@@ -44,7 +47,10 @@
                 <p class="ParagraghLeftBox">We provide trusted eye care services for the whole family.
                      From routine eye exams to specialized treatments, 
                      our expert team ensures your vision stays sharp and healthy.</p>
-                <a href="#"><button class="BotonFirstSection">Book Appointment</button></a>
+                <a href="#" class="btn">
+                  <span class="text text1">Book Appointment</span>
+                  <span class="text text2">Book Appointment</span>
+                </a>
                 <div class="Paraph-Star">
                     <p>Google Rating 5.0</p>
                     <p>
@@ -470,15 +476,28 @@
           </section>
 
           <section class="EighthSection">
-            <div class="FirstContainer8">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/2M6qSUQrMBk?si=QkbM3i7-TQYMp4at" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class="Play">
-                    <i class="fa-solid fa-play"></i>
-                </div>
-            </div>
+
+            <!-- ?----vedio-- -->
+             <div>
+                 <a href="#popup" class="video">
+             <img class="imageveo" src="./images/home10.webp" alt="vedio">
+                    <i class="fa-solid fa-play playe"></i>
+              </a>
+              <div id="popup" class="vdpopup">
+              <div class="coont">
+                <a href="#close" class="close">&times;</a>
+                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/2M6qSUQrMBk?si=QkbM3i7-TQYMp4at" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+              </div>
+              </div>
+            <!-- ?----vedio-- -->
+            
             <div class="SecondContainer">
             <h1>Clear Vison Starts Here. Schedule Your Eye Exam Today</h1>
-            <a href="#"><button class="BotonSecondContainer">Book Your Visit</button></a>
+           <a href="#" class="btn">
+              <span class="text text1">Book Your Visit</span>
+              <span class="text text2">Book Your Visit</span>
+            </a>
             </div>
         </section>
 

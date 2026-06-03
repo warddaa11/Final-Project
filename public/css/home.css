@@ -33,25 +33,42 @@ body{
 .ContainerNavBar img{
     width: 150px;
 }
-.BotonHeader{
-    border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
-    background-color: rgb(0, 183, 181);
-    cursor: pointer;
-    transition: 0.3s;
-}
-.BotonHeader:hover{
-    background-color: rgb(0, 84, 97);
-}
 .IconHeader{
     font-size: 11px;
     color:rgb(127, 127, 127) ;
 }
 
-
+/* ?-----------Hover btn-------- */
+.btn{
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background-color: rgb(0, 183, 181);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.btn .text{
+    display: block;
+    transition: transform 0.3s ease;
+    padding: 0.2rem 1rem;
+}
+.btn .text2{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 0.2rem 1rem;
+}
+.btn:hover .text1{
+    transform: translateY(-100%);
+    background-color: rgb(0, 84, 97);
+}
+.btn:hover .text2{
+    transform: translateY(-100%);
+    background-color: rgb(0, 84, 97);
+}
 /* !---The Main--- */
 /* !---First Section--- */
 .FirstSection{
@@ -588,7 +605,7 @@ textarea{
     align-items: center;
     gap: 30px;
     list-style: none;
-    font-size: 17px;
+    font-size: 16px;
     padding-bottom: 2rem;
 }
 .ContainerFaqs a{
@@ -659,31 +676,66 @@ textarea{
     background-color: rgb(0, 84, 97);
     border: none;
 }
-.FirstContainer8{
+
+
+/* ?--------------- */
+.video{
     position: relative;
+    display: inline-block;
 }
-.Play{
-    background-color: rgb(0, 183, 181);
-    border-radius: 50%;
-    width: fit-content;
-    padding: 2rem;
+.imageveo{
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+    /* display: block; */
+     transition: transform 0.3s ease;
+}
+.imageveo:hover {
+    transform: scale(1.1);
+}
+.playe {
     position: absolute;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 28px;
+    background-color: rgb(1, 183, 182);
+    padding: 2rem;
+    width: fit-content;
+    height: 40px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(1min);
 }
-.Play i{
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-}
-.Play:hover{
+.vdpopup{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0,0, 0.8);
+    /* background: rebeccapurple; */
     display: none;
+    justify-content: center;
+    align-items: center;
 }
+.vdpopup:target{
+    display: flex;
+}
+.coont{
+    position: relative;
+    width: 60%;
+
+}
+.close{
+    position: absolute;
+    top: -10%;
+    right: 0;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* ?--------------- */
 /* !------------------Fixed Btn------ */
 .FixedBtn{
     border-radius: 50%;
@@ -935,6 +987,10 @@ form{
 .SecondContainer{
     flex-direction: column;
 }
+.playe {
+    font-size: 16px;
+    padding: 1.5rem;
+}
 /* !----The Footer--- */
 .ContainerFooter{
     grid-template-columns: 1fr;
@@ -955,6 +1011,7 @@ img{
 .Faq h1{
     font-size: 24px;
 }
+
 .FirstContainer h1{
     width: 100%;
     text-align: center;
