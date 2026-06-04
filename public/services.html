@@ -6,61 +6,87 @@
     <title>Optilux - Eye Clinic Optometrist and Optical Store HTML Template</title>
     <link rel="stylesheet" href="./css/services.css">
     <script src="https://kit.fontawesome.com/c11cd62dbf.js" crossorigin="anonymous"></script>
-    <!-- <link rel="icon" type="image/x-icon" href="./images/favicon.webp"> -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
 </head>
 <body>
     <!-- !------The Header------ -->
      <header class="TheHeader">
-        <div class="ContainerNavBar">
-            <div class="Logo">
-                <img src="./images/logo.webp" alt="Logo">
-            </div>
-            <nav class="NavBar">
-                <ul>
-                    <li><a href="./home.html">Home <i class="fa-solid fa-angle-down IconHeader"></i></a>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./services.html">Services <i class="fa-solid fa-angle-down IconHeader"></i></a>
-                        <ul>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Services 2</a></li>
-                            <li><a href=""> Services Single</a></li>
-                            <li><a href="">Pricing</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./about.html">About Us <i class="fa-solid fa-angle-down IconHeader"></i></a>
-                        <ul>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Our Doctors</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#pages">Pages <i class="fa-solid fa-angle-down IconHeader"></i></a>
-                        <ul>
-                            <li><a href="./faqs.html">FAQ</a></li>
-                            <li><a href="./testimonials.html">Testimonials</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./shop1.html">Shop <i class="fa-solid fa-angle-down IconHeader"></i></a>
-                        <ul>
-                            <li><a href="">Shop</a></li>
-                            <li><a href="">Shop 2</a></li>
-                            <li><a href="">Product Single</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-           <a href="#" class="btn">
-              <span class="text text1">Book Your Visit</span>
-              <span class="text text2">Book Your Visit</span>
-            </a>
+      <div class="ContainerNavBar">
+        <div class="Logo">
+          <img src="./images/logo.webp" alt="Logo" />
         </div>
+        <nav class="NavBar">
+          <div class="dropdown">
+            <button class="dropbtn">
+              Home
+              <i class="fa-solid fa-angle-down IconHeader"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./home.html">Home</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Services
+              <i class="fa-solid fa-angle-down IconHeader"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./services.html">Services</a>
+              <a href="./services.html">Services 2</a>
+              <a href="./services.html">Services Single</a>
+              <a href="./services.html">Pricing</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              About Us
+              <i class="fa-solid fa-angle-down IconHeader"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./about.html">About Us</a>
+              <a href="./about.html">Our Doctors</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Pages
+              <i class="fa-solid fa-angle-down IconHeader"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./faqs.html">FAQ</a>
+              <a href="./testimonials.html">Testimonials</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Shop
+              <i class="fa-solid fa-angle-down IconHeader"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./shop1.html">Shop</a>
+              <a href="./shop2.html">Shop 2</a>
+              <a href="./shop1.html">Product Single</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"><a href=""></a>Blog</button>
+          </div>
 
-       
-     </header>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Contact
+            </button>
+            <div class="dropdown-content">
+              <a href="./contact.html">Contact</a>
+            </div>
+          </div>
+        </nav>
+        <a href="#" class="btn">
+          <span class="text text1">Book Your Visit</span>
+          <span class="text text2">Book Your Visit</span>
+        </a>
+      </div>
+    </header>
 
      <!-- !---The Main--- -->
       <main>

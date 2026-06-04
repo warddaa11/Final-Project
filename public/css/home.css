@@ -2,33 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .TheHeader{
-    padding: 1.2rem 6%;
+    padding: 0.5rem 6%;
 }
 .ContainerNavBar{
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px 15px;
-}
-.NavBar ul{
-    display: flex;
-    gap: 20px;
-}
-.NavBar ul li{
-    text-decoration: none;
-    list-style: none;
-}
-.NavBar ul li a{
-    text-decoration: none;
-    list-style: none;
-    color: rgb(42, 72, 94);
-    font-weight: bolder;
+    border-radius: 10px;
 }
 .ContainerNavBar img{
     width: 150px;
@@ -69,6 +56,71 @@ body{
     transform: translateY(-100%);
     background-color: rgb(0, 84, 97);
 }
+/* ?--------------------------- */
+.NavBar {
+  overflow: hidden;
+}
+
+.NavBar a {
+  float: left;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;  
+  border: none;
+  outline: none;
+  color: rgb(42, 72, 94);
+  padding: 10px;
+  background-color: inherit;
+  font-weight: bold;
+  margin: 0;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.NavBar a:hover, .dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 15px;
+  background-color: white;
+  min-width: 160px;
+  border-radius: 2px;
+  border: 1px solid rgb(221, 221, 221);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(42, 72, 94);
+  padding: 4px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(3, 183, 182);
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* !---The Main--- */
 /* !---First Section--- */
 .FirstSection{
@@ -112,7 +164,6 @@ body{
 }
 .RightBox img{
     width: 100%;
-    /* object-fit: cover; */
     border-radius: 20px;
 }
 .SmallImage, .SmallImage1{
@@ -439,6 +490,11 @@ body{
     color: rgb(0, 183, 181);
     padding-top: 1rem;
     padding-bottom: 2rem;
+    cursor: pointer;
+}
+.ParagraphFifthSect:hover{
+    color: rgb(130, 153, 168);
+    
 }
 .RightFifthSection{
     padding: 2rem;
@@ -527,6 +583,9 @@ textarea{
     color: white;
     border-radius: 50%;
     padding: 0.7rem 1.3rem 0.7rem 0.7rem; 
+}
+.ContainerArrow i:hover{
+    background-color: rgb(0, 133, 139);
 }
 .ContainerFirstLineBox{
     display: grid;
@@ -682,38 +741,43 @@ textarea{
 .video{
     position: relative;
     display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .imageveo{
     width: 100%;
     height: auto;
     /* object-fit: cover; */
     /* display: block; */
-     transition: transform 0.3s ease;
+     /* transition: transform 0.3s ease; */
 }
-.imageveo:hover {
-    transform: scale(1.1);
-}
+/* .imageveo:hover { */
+    /* transform: scale(1.1); */
+/* } */
 .playe {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: white;
-    font-size: 28px;
+    font-size: 20px;
     background-color: rgb(1, 183, 182);
-    padding: 2rem;
+    padding: 1rem 1.5rem;
+    padding-right: 1rem;
     width: fit-content;
-    height: 40px;
+    /* height: 40px; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.playe i{
+    color: white;
+}
 .vdpopup{
     position: fixed;
     inset: 0;
     background: rgba(0, 0,0, 0.8);
-    /* background: rebeccapurple; */
     display: none;
     justify-content: center;
     align-items: center;
@@ -734,7 +798,12 @@ textarea{
     font-size: 14px;
     text-decoration: none;
 }
-
+.imageveo:hover{
+    transform: scale(1.1);
+}
+.ContainerVde{
+    overflow: hidden;
+}
 /* ?--------------- */
 /* !------------------Fixed Btn------ */
 .FixedBtn{
@@ -785,7 +854,6 @@ textarea{
     border-radius: 4px;
     border: 1px solid white;
     color: black;
-    font-size: 26px;
 }
 .SocialMediaIcons{
     display: flex;
@@ -820,16 +888,24 @@ textarea{
 
 /* !TODO---Responsive Tablette-- */
 @media (max-width:768px){
-.TheHeader{
-    padding: 1.2rem 6%;
-}
+/* !---The Header--- */
 .ContainerNavBar{
     flex-direction: column;
 }
-.NavBar ul{
+.NavBar{
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+.dropdown .dropbtn {
+  font-size: 15px;  
+  padding: 5px;
+}
+.ContainerNavBar{
+    padding: 0.5rem 2%;
+}
+
 /* !---The Main--- */
 /* !---First Section--- */
 .ContainerBoxes{

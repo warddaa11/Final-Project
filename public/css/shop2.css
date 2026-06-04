@@ -2,48 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .TheHeader{
-    padding: 1rem 6%;
+    padding: 0rem 6%;
 }
 .ContainerNavBar{
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 10px;
 }
-.NavBar ul{
+.NavBar {
     display: flex;
-    gap: 20px;
-}
-.NavBar ul li{
-    text-decoration: none;
-    list-style: none;
-}
-.NavBar ul li a{
-    text-decoration: none;
-    list-style: none;
-    color: rgb(42, 72, 94);
-    font-weight: bolder;
 }
 .ContainerNavBar img{
-    width: 150px;
-}
-.BotonHeader{
-    border: none;
-    padding: 10px;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
-    background-color: rgb(0, 183, 181);
-    cursor: pointer;
-}
-.BotonHeader:hover{
-    background-color: rgb(0, 84, 97);
+    width: 100px;
 }
 .IconHeader{
     font-size: 11px;
@@ -52,7 +30,7 @@ body{
 .RightHeader{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
     position: relative;
 }
 .RightHeader input{
@@ -60,7 +38,9 @@ body{
     padding: 10px;
     border: none;
     border: 1px solid rgb(117, 117, 117);
+    width: 120px;
 }
+
 .RightHeader i{
     color: rgb(42, 72, 94);
     font-size: 1.4rem;
@@ -72,7 +52,7 @@ body{
     color: white;
     position: absolute;
     top: -4px;
-    right: 38px;
+    right: 32px;
 }
 .SecondCercle{
     color: white;
@@ -83,6 +63,69 @@ body{
     position: absolute;
     top: -4px;
     right: -15px;
+}
+.NavBar {
+  overflow: hidden;
+}
+
+.NavBar a {
+  float: left;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;  
+  border: none;
+  outline: none;
+  color: rgb(42, 72, 94);
+  padding: 10px;
+  background-color: inherit;
+  font-weight: bold;
+  margin: 0;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.NavBar a:hover, .dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 15px;
+  background-color: white;
+  min-width: 160px;
+  border-radius: 2px;
+  border: 1px solid rgb(221, 221, 221);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(42, 72, 94);
+  padding: 4px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(3, 183, 182);
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 
@@ -150,6 +193,7 @@ body{
 }
 .ParagraphSecondSection{
     text-align: center;
+    margin-top: 3rem;
 }
 .ParagraphSecondSection i{
     color: rgb(242, 184, 39);
@@ -207,6 +251,12 @@ body{
 .PageLink i{
     color:rgb(42, 72, 120) ;
 }
+.PageLink i:hover{
+    color: rgb(76, 110, 223);
+}
+.page1 a:hover{
+    color: rgb(76, 110, 223);
+}
 .page1 a{
     text-decoration: none;
     color:rgb(42, 72, 120) ;
@@ -243,7 +293,9 @@ body{
     display: none;
 
 }
-
+input[type=checkbox] {
+  accent-color: rgb(2, 155, 153);
+}
 /* !----------------Fixed Btn------ */
 .FixedBtn{
     border-radius: 50%;
@@ -293,7 +345,6 @@ body{
     border-radius: 4px;
     border: 1px solid white;
     color: black;
-    font-size: 26px;
 }
 .SocialMediaIcons{
     display: flex;
@@ -331,9 +382,18 @@ body{
 .ContainerNavBar{
     flex-direction: column;
 }
-.NavBar ul{
+.NavBar{
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown .dropbtn {
+  font-size: 15px;  
+  padding: 5px;
+}
+.ContainerNavBar{
+    padding: 0.5rem 2%;
 }
 
 /* !---The Main--- */
